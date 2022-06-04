@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header{
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar{
+    display: flex;
+}
+
+.nav-bar > div{
+    font-size: 15px;
+    padding: 12px 24px;
+    line-height: 25px;
+}
+
+.nav-bar > div:hover{
+    background-color: #cdcdcd;
+    color: black;
+    cursor: pointer;
+}
+.search{
+    padding: 12px 24px;
+    line-height: 25px;
+}
+
+.search:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+.nav-bar .more{
+    position: relative;
+}
+
+.more:hover{
+    color: black;
+    background-color: #cdcdcd;
+    cursor: pointer;
+}
+
+.more li:hover{
+    color: black;
+    background-color: #cdcdcd;
+    cursor: pointer;
+}
+
+.more:hover .subnav{
+    display: block;
+}
+
+
+.subnav{
+    top: 100%;
+    left: 0;
+    position: absolute;
+    color: black;
+    display: none;
+}
+
+.subnav ul li{
+    list-style: none;
+    padding: 8px 0;
+    padding-right: 40px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+
+.slider{
+    background-image: url('https://www.w3schools.com/w3images/chicago.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.text-content{
+    position: absolute;
+    color: white;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-location{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
