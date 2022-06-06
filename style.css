@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Segoe UI",Arial,sans-serif;
 }
 
 .header{
@@ -11,6 +11,9 @@
     color: white;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
 }
 
 .nav-bar{
@@ -65,6 +68,7 @@
     position: absolute;
     color: black;
     display: none;
+    z-index: 2;
 }
 
 .subnav ul li{
@@ -85,6 +89,7 @@
     position: relative;
 }
 
+
 .text-content{
     position: absolute;
     color: white;
@@ -98,3 +103,166 @@
     margin-bottom: 30px;
     font-size: 30px;
 }
+
+.section{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 64px;
+    text-align: center;
+}
+
+.section > h2{
+    margin: 10px 0;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+.section > h3{
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: #a7a7a7;
+}
+
+.section-text{
+    margin-top: 15px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.section-imgs{
+    margin: 70px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+
+.section h3{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.section-img img{
+    width: 60%;
+    border-radius: 5px;
+}
+
+.wrapper-tour-background{
+    max-width: 100%;
+    background-color: black;
+    padding: 64px 16px;
+}
+.tour-container{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.tour-container > h3{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: white;
+
+}
+
+.tour-container > h4{
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: #a7a7a7;
+}
+
+.tour-times{
+    color: #848484;
+    margin: 40px 0;
+    text-align: left;
+}
+
+.tour-time{
+    background-color: white;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 8px 16px;
+}
+
+.sold-out{
+    background-color: red;
+    color: white;
+    padding: 2px 4px;
+    line-height: 25px;
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.ticket-remain{
+    display: block;
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+#fix{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour-locations{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 15px;
+}
+
+.tour-location img{
+    width: 100%;
+    vertical-align: middle;
+
+} 
+.tour-ticket > h4,
+.tour-ticket > p
+{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.tour-ticket{
+    background-color: white;
+    text-align: left;
+    padding: 0 16px;
+    padding-bottom: 16px;
+}
+.tour-ticket > h3{
+    padding-top: 15px;
+    font-size: 15px;
+}
+.tour-ticket > h4{
+    font-weight: 400;
+    color: #848484;
+}
+
+.tour-ticket button{
+    padding: 8px 16px;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    line-height: 16px;
+    
+}
+
+.tour-ticket button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: #848484;
+    border: 1px solid #848484;
+
+}
+
