@@ -91,7 +91,7 @@
     background-size: cover;
     padding-bottom: 50%;
     position: relative;
-    /* margin-top: 40px; */
+    margin-top: 50px;
 }
 
 
@@ -386,7 +386,7 @@
         height: 50px;
         overflow: hidden;
         z-index: 10;
-        position: relative;
+        position: fixed;
         display: block;
     }
     .search{
