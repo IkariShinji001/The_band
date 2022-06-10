@@ -37,7 +37,9 @@
     padding: 12px 24px;
     line-height: 25px;
 }
-
+#bar{
+    display: none;
+}
 .search:hover {
     background-color: red;
     cursor: pointer;
@@ -89,7 +91,7 @@
     background-size: cover;
     padding-bottom: 50%;
     position: relative;
-    margin-top: 48px;
+    /* margin-top: 40px; */
 }
 
 
@@ -373,4 +375,42 @@
 .footer-icon i:hover{
     color: #a7a7a7;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px){
+    .nav-bar{
+        display: block;
+    }
+    .header{
+        height: 50px;
+        overflow: hidden;
+        z-index: 10;
+        position: relative;
+        display: block;
+    }
+    .search{
+        position: absolute;
+        top: 0;
+        right: 0px;
+    }
+    #bar{
+        display: block;
+        line-height: 25px;
+    }
+    #glass{
+        display: none;
+    }
+    .home{
+        width: 100px;
+    }
+    .text-content,
+    .text-location{
+        display: none;
+    }
+
+    .section-text{
+        margin: 0 30px;
+    }
+
 }

@@ -1,7 +1,10 @@
 var slider = document.querySelector('.slider');
 var sliderLocation = document.querySelector('.slider-location');
 var sliderSpeech = document.querySelector('.slider-speech');
-
+var search = document.querySelector('.search');
+var header = document.querySelector('.header');
+var navbar = document.querySelector('.nav-bar');
+var headerHeight = header.clientHeight;
 
 var sliders = [];
 
@@ -26,7 +29,7 @@ console.log(sliders.length);
 function changeImg(){
     slider.style.backgroundImage = sliders[i];
     sliderLocation.innerHTML = sliderLocations[i];
-    sliderSpeech.innerHTML = sliderSpeechs[i];
+    sliderSpeech.innerHTML = sliderSpeechs[i]
 
     if(i < sliders.length - 1)
     {
@@ -34,8 +37,17 @@ function changeImg(){
     }else{
         i = 0;
     }
-    console.log(i);
 
 }
 
 setInterval(changeImg, 3000);
+
+
+    search.onclick = function(){
+        var isClose = header.clientHeight === headerHeight;
+        if(isClose){
+            header.style.height = 'auto';
+        }else{
+            header.style.height = null;
+        }
+    }
